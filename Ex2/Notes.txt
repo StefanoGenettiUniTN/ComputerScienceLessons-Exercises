@@ -1,0 +1,45 @@
+Alex is 22. He really loves travelling. He is really sensitive to the cold. Different countries in the world use different scales to measure temperature. He is in trouble for exemple when travelling from a country with Celsius degree to a country which has Fahrenheit as official temperature measurement scale. Write the following functions to help Alex during his journeys around the world.
+	- celsiusToFahrenheit --> converts a temperature in Celsius to a temperature in Fahrenheit
+	- fahrenheitToCelsius --> converts a temperature in Fahrenheit to a temperature in Celsius
+	- kelvinToCelsius --> converts a temperature in Kelvin to a temperature in Celsius
+	- celsiusToKelvin --> converts a temprature in Celsius to a termperature in Kelvin
+
+
+Example:
+double temperatureCelsius = 20.5;
+double temperatureFahrenheit = celsiusToFahrenheit(temperatureCelsius);
+cout<<"TEMP: <<temperatureFahrenheit<<endl;	//TEMP: 401
+	
+===
+
+In the first paper of exercises (Exercise paper #1 - exercise number 3) we have met Elisa, a clever girl who enjoys playing with her smartphone. Elisa has updated her favourite mobile videogame. This time a word of a given length appears on the screen and the player (in this case our friend Elisa) has to write the corresponding "palindrome version" of the input word. Look at the following example to understand better:
+
+==> [GAME] on the smartphone appears the following message: "4 - CIAO"
+
+The first number is the length of the subsequent string.
+
+In this case Elisa has to write:
+
+==> [Elisa] OAIC
+
+You have been asked to write a function to help Elisa playing with this new videogame.
+
+The following is the desired signature of the function you have to implement:
+void displayPalindrome(int N, char word[MAX_LENGTH]);
+
+where N is the length of the input word;
+word is the input word;
+MAX_LENGTH is the maximum value of N which is allowed. You can set MAX_LENGTH as you prefer (for example #define MAX_LENGTH 100).
+
+Consider that it should be a good idea to print an error message if the input N is larger then MAX_LENGTH.
+
+Example:
+
+char parola[MAX_LENGTH]={'c','i','a','o'};
+displayPalindrome(4, parola);	//OUTPUT = oaic
+
+char parola[MAX_LENTH]={'I','N','F','O','R','M','A','T','I','C','A'};
+displayPalingrome(11, parola);
+OUTPUT = ACITAMROFNI
+
+
